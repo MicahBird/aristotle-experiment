@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="tier-list-container">
+  {{ $tiers := slice "S" "A" "B" "C" "D" "E" "F" }}
+  {{ range $tiers }}
+    {{ $currentTier := . }}
+    <div class="tier-row">
+      <div class="tier-label tier-{{ $currentTier | lower }}">{{ $currentTier }}</div>
+      <div class="tier-items">
+        {{ range where site.RegularPages "Params.tier" $currentTier }}
+          <div class="tier-item" 
+               data-title="{{ .Title }}" 
+               data-date="{{ .Date.Format "January 2, 2006" }}" 
+               data-image="{{ index .Params "image-url" }}"
+               data-url="{{ .RelPermalink }}">
+            <img src="{{ index .Params "image-url" }}" alt="{{ .Title }}">
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+</div>
+
+<!-- Modal -->
+<div id="item-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2 id="modal-title"></h2>
+    <div class="modal-body">
+      <img id="modal-image" src="" alt="">
+      <p>
+        <strong>Date Added:</strong> <span id="modal-date"></span>
+      </p>
+      <a id="modal-link" href="#">Go to Page</a>
+    </div>
+  </div>
+</div>
+{{ end }}
