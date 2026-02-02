@@ -6,32 +6,41 @@
     <div class="tier-row">
       <div class="tier-label tier-{{ $currentTier | lower }}">{{ $currentTier }}</div>
       <div class="tier-items">
-        {{ range where site.RegularPages "Params.tier" $currentTier }}
-          <div class="tier-item" 
-               data-title="{{ .Title }}" 
-               data-date="{{ .Date.Format "January 2, 2006" }}" 
-               data-image="{{ index .Params "image-url" }}"
-               data-url="{{ .RelPermalink }}">
+        {{ range (where site.RegularPages "Params.tier" $currentTier).ByParam "position" }}
+          <a href="#{{ .File.ContentBaseName }}" class="tier-item">
             <img src="{{ index .Params "image-url" }}" alt="{{ .Title }}">
-          </div>
+          </a>
         {{ end }}
       </div>
     </div>
   {{ end }}
 </div>
 
-<!-- Modal -->
-<div id="item-modal" class="modal">
-  <div class="modal-content">
-    <span class="close-button">&times;</span>
-    <h2 id="modal-title"></h2>
-    <div class="modal-body">
-      <img id="modal-image" src="" alt="">
-      <p>
-        <strong>Date Added:</strong> <span id="modal-date"></span>
-      </p>
-      <a id="modal-link" href="#">Go to Page</a>
+<!-- Dialogs for each post -->
+{{ range site.RegularPages }}
+<dialog id="{{ .File.ContentBaseName }}" class="post-dialog">
+  <div class="dialog-content">
+    <div class="dialog-header">
+      <h2>{{ .Title }}</h2>
+      <a href="#" class="close-button">&times;</a>
+    </div>
+    <div class="dialog-body">
+      {{ if .Params.link }}
+      <a href="{{ .Params.link }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ index .Params "image-url" }}" alt="{{ .Title }}" class="dialog-image">
+      </a>
+      {{ else }}
+        <img src="{{ index .Params "image-url" }}" alt="{{ .Title }}" class="dialog-image">
+      {{ end }}
+      
+      <p><strong>Date Added:</strong> {{ .Date.Format "January 2, 2006" }}</p>
+      
+      <div class="post-content">
+        {{ .Content }}
+      </div>
     </div>
   </div>
-</div>
+</dialog>
+{{ end }}
+
 {{ end }}

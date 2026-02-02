@@ -1,37 +1,62 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const modal = document.getElementById('item-modal');
-  const closeBtn = document.querySelector('.close-button');
-  const modalTitle = document.getElementById('modal-title');
-  const modalImage = document.getElementById('modal-image');
-  const modalDate = document.getElementById('modal-date');
-  const modalLink = document.getElementById('modal-link');
+  
+  function getHash() {
+    // Remove the '#'
+    return window.location.hash.substring(1);
+  }
 
-  // Open Modal
-  document.querySelectorAll('.tier-item').forEach(item => {
-    item.addEventListener('click', function() {
-      const title = this.getAttribute('data-title');
-      const date = this.getAttribute('data-date');
-      const imageUrl = this.getAttribute('data-image');
-      const url = this.getAttribute('data-url');
-
-      modalTitle.textContent = title;
-      modalDate.textContent = date;
-      modalImage.src = imageUrl;
-      modalLink.href = url;
-
-      modal.style.display = 'block';
+  function closeAllDialogs() {
+    document.querySelectorAll('dialog').forEach(dialog => {
+      if (dialog.open) {
+        dialog.close();
+      }
     });
-  });
+  }
 
-  // Close Modal
-  closeBtn.addEventListener('click', function() {
-    modal.style.display = 'none';
-  });
+  function handleHashChange() {
+    const hash = getHash();
+    
+    // If we have a hash, find the dialog
+    if (hash) {
+      const dialog = document.getElementById(hash);
+      if (dialog && !dialog.open) {
+        // Close others just in case
+        closeAllDialogs();
+        dialog.showModal();
+      } else if (!dialog) {
+        // Hash exists but no dialog found (maybe bad link), close all
+        closeAllDialogs();
+      }
+    } else {
+      // No hash, close all
+      closeAllDialogs();
+    }
+  }
 
-  // Click outside to close
-  window.addEventListener('click', function(event) {
-    if (event.target == modal) {
-      modal.style.display = 'none';
+  // Handle initial load
+  handleHashChange();
+
+  // Handle hash changes
+  window.addEventListener('hashchange', handleHashChange);
+
+  // Close when clicking outside (backdrop)
+  document.querySelectorAll('dialog').forEach(dialog => {
+    dialog.addEventListener('click', function(event) {
+      // If the target is the dialog element itself, it's the backdrop
+      if (event.target === dialog) {
+        window.location.hash = ''; // This will trigger hashchange and close it
+      }
+    });
+
+    // Also handle close button explicitly if we want to prevent default jump behavior
+    // although href="#" usually does the job of clearing specific hash.
+    const closeBtn = dialog.querySelector('.close-button');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function(e) {
+        // Let the href="#" do its work, or preventDefault and set hash manually
+        // e.preventDefault();
+        // window.location.hash = '';
+      });
     }
   });
 });
