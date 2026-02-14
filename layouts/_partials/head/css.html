@@ -7,3 +7,11 @@
     {{- end }}
   {{- end }}
 {{- end }}
+
+<style>
+  :root {
+    {{ range $tier, $color := site.Params.tier_colors }}
+    --color-{{ $tier }}: {{ $color }};
+    {{ end }}
+  }
+</style>

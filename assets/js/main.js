@@ -48,6 +48,20 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
+    dialog.addEventListener('cancel', function() {
+      window.location.hash = ''; // Clear hash on Escape key
+    });
+
+    dialog.addEventListener('close', function() {
+      // Stop any iframes (like Bandcamp) by refreshing their src
+      const iframes = dialog.querySelectorAll('iframe');
+      iframes.forEach(iframe => {
+        const src = iframe.src;
+        iframe.src = '';
+        iframe.src = src;
+      });
+    });
+
     // Also handle close button explicitly if we want to prevent default jump behavior
     // although href="#" usually does the job of clearing specific hash.
     const closeBtn = dialog.querySelector('.close-button');

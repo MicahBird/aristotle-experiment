@@ -21,7 +21,7 @@
 <dialog id="{{ .File.ContentBaseName }}" class="post-dialog">
   <div class="dialog-content">
     <div class="dialog-header">
-      <h2>{{ .Title }}</h2>
+      <h2 style="color: var(--color-{{ .Params.tier | lower }})">{{ .Title }}</h2>
       <a href="#" class="close-button">&times;</a>
     </div>
     <div class="dialog-body">
@@ -38,6 +38,14 @@
       <div class="post-content">
         {{ .Content }}
       </div>
+      
+      {{ with .GetTerms "tags" }}
+      <div class="dialog-tags">
+        {{ range . }}
+          <a href="{{ .RelPermalink }}" class="tag">{{ .LinkTitle }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
     </div>
   </div>
 </dialog>

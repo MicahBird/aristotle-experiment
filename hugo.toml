@@ -2,6 +2,16 @@ baseURL = 'https://example.org/'
 languageCode = 'en-US'
 title = 'My New Hugo Site'
 
+[params]
+  [params.tier_colors]
+    s = "#ff7f7f"
+    a = "#ffbf7f"
+    b = "#ffdf7f"
+    c = "#ffff7f"
+    d = "#bfff7f"
+    e = "#7fff7f"
+    f = "#7fffff"
+
 [menus]
   [[menus.main]]
     name = 'Home'
