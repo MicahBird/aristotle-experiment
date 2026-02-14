@@ -2,7 +2,7 @@
 title: "Lehto - Melba EP"
 date: 2026-02-03T06:38:23-07:00
 link: "https://lehto.bandcamp.com/album/melba-ep"
-position: 2
+position: 13
 draft: false
 tags: ["red"]
 params:

@@ -2,7 +2,7 @@
 title: "Nostalgia 77 - You Where in My Dream Last Night"
 date: 2026-01-28T11:33:22-07:00
 link: "https://nostalgia77.bandcamp.com/track/you-where-in-my-dream-last-night"
-position: 10
+position: 50
 draft: false
 tags: ["red"]
 params:

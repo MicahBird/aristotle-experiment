@@ -2,7 +2,7 @@
 title: "Ochre - A Midsummer Nice Dream"
 date: 2026-01-30T08:19:55-07:00
 link: "https://ochre.bandcamp.com/album/a-midsummer-nice-dream"
-position: 1
+position: 12
 draft: false
 tags: ["red"]
 params:

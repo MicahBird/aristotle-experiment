@@ -3,7 +3,7 @@ title: "Air - Air I • You (2021 Remaster)"
 date: 2026-01-28T09:33:44-07:00
 draft: false
 link: "https://airmusik.bandcamp.com/album/air-i-you-2021-remaster"
-position: 1
+position: 20
 tags: ["red"]
 params:
   tier: "B"
