@@ -2,7 +2,7 @@
 title: "Jeb Loy Nichols - Strange Faith and Practice"
 date: 2026-02-07T08:59:26-07:00
 link: "https://jebloynichols.bandcamp.com/album/strange-faith-and-practice"
-position: 10
+position: 14
 draft: false
 tags: ["red"]
 params:

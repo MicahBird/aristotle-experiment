@@ -19,7 +19,7 @@ title = 'My New Hugo Site'
     weight = 10
 
   [[menus.main]]
-    name = 'Posts'
+    name = 'All Albums'
     pageRef = '/posts'
     weight = 20
 

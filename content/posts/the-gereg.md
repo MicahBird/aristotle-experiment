@@ -2,7 +2,7 @@
 title: "The HU - The Gereg"
 date: 2026-02-01T20:42:29-07:00
 link: "https://thehu.bandcamp.com/album/the-gereg"
-position: 1
+position: 10
 draft: false
 tags: ["red"]
 params:
