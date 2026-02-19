@@ -1,1 +1,12 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<div class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <p>{{ site.Params.footer.text | default "&copy; 2026 Hugo Tierlist. All rights reserved." | safeHTML }}</p>
+      <div class="footer-links">
+        <a href="{{ site.Home.RelPermalink }}">Home</a>
+        <a href="/posts">All Albums</a>
+        <a href="/tags">Tags</a>
+      </div>
+    </div>
+  </div>
+</div>

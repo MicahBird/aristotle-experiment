@@ -1,2 +1,23 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div class="site-header">
+  <div class="container">
+    <div class="header-content">
+      <a href="{{ site.Home.RelPermalink }}" class="site-logo">
+        <h1>{{ site.Params.header.title | default site.Title }}</h1>
+      </a>
+      {{ if .IsHome }}
+        {{ with site.Params.header.subtitle }}
+          <p class="site-subtitle">{{ . }}</p>
+        {{ end }}
+      {{ end }}
+    </div>
+    <nav class="main-nav">
+      {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    </nav>
+  </div>
+</div>
+
+{{ with site.Params.header.custom_html }}
+  <div class="custom-header-html">
+    {{ . | safeHTML }}
+  </div>
+{{ end }}

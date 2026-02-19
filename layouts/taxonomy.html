@@ -1,7 +1,12 @@
 {{ define "main" }}
+<div class="posts-container">
   <h1>{{ .Title }}</h1>
   {{ .Content }}
+  
+  <ul class="taxonomy-list">
   {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    <li><h2><a href="{{ .RelPermalink }}" class="tag">{{ .LinkTitle }} ({{ len .Pages }})</a></h2></li>
   {{ end }}
+  </ul>
+</div>
 {{ end }}

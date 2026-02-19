@@ -3,6 +3,14 @@ languageCode = 'en-US'
 title = 'My New Hugo Site'
 
 [params]
+  [params.header]
+    title = "Hugo Tierlist"
+    subtitle = "My favorite albums categorized by tier."
+    custom_html = "<!-- Add your custom header HTML here -->"
+
+  [params.footer]
+    text = "&copy; 2026 Hugo Tierlist. All rights reserved."
+
   [params.tier_colors]
     s = "#ff7f7f"
     a = "#ffbf7f"

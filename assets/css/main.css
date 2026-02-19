@@ -164,11 +164,120 @@ dialog::backdrop {
   color: #fff;
 }
 
+/* Header & Footer Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  background-color: #2d2d2d;
+  border-bottom: 2px solid var(--border-color);
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+.header-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.site-logo {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.site-logo h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.site-subtitle {
+  color: #aaa;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Horizontal Navbar */
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.main-nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.main-nav a:hover, .main-nav a.active {
+  border-bottom-color: var(--color-c);
+}
+
+/* Footer Styling */
+.site-footer {
+  background-color: #2d2d2d;
+  border-top: 2px solid var(--border-color);
+  padding: 40px 0;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.footer-content p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  color: var(--color-c);
+}
+
 /* Posts Page Styles */
 .posts-container {
   max-width: 800px;
   margin: 0 auto;
 }
+
+.taxonomy-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.taxonomy-list h2 {
+  margin: 0;
+}
+
+.taxonomy-list .tag {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+
+
 
 .post-entry {
   background-color: #2d2d2d;

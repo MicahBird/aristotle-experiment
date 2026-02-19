@@ -1,7 +1,39 @@
 {{ define "main" }}
+<div class="posts-container">
   <h1>{{ .Title }}</h1>
   {{ .Content }}
+  
   {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    <article class="post-entry">
+      <div class="post-entry-header">
+        <h2 style="color: var(--color-{{ .Params.tier | lower }})">{{ .Title }}</h2>
+        <span class="post-rank tier-{{ .Params.tier | lower }}">{{ .Params.tier }}</span>
+      </div>
+      
+      <div class="post-entry-body">
+        {{ if .Params.link }}
+        <a href="{{ .Params.link }}" target="_blank" rel="noopener noreferrer">
+          <img src="{{ index .Params "image-url" }}" alt="{{ .Title }}" class="post-entry-image">
+        </a>
+        {{ else }}
+          <img src="{{ index .Params "image-url" }}" alt="{{ .Title }}" class="post-entry-image">
+        {{ end }}
+        
+        <p class="post-date"><strong>Date Added:</strong> {{ .Date.Format "January 2, 2006" }}</p>
+        
+        <div class="post-content">
+          {{ .Content }}
+        </div>
+        
+        {{ with .GetTerms "tags" }}
+        <div class="post-tags">
+          {{ range . }}
+            <a href="{{ .RelPermalink }}" class="tag">{{ .LinkTitle }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </article>
   {{ end }}
+</div>
 {{ end }}
