@@ -4,7 +4,7 @@ date: 2026-02-03T18:59:46-07:00
 link: "https://chrischristodoulou.bandcamp.com/album/risk-of-rain-2-4"
 position: 10
 draft: false
-tags: ["red"]
+tags: ["Recommended by: Bryson"]
 params:
   tier: "A"
   image-url: "https://f4.bcbits.com/img/a1339632586_16.jpg"
@@ -14,6 +14,4 @@ Even though I have only played Risk of Rain 2 for a collective 20 minutes, Chris
 
 
 **Memorable Track:** {{< bandcamp width=100% height=42 album=270762832 size=small bgcol=333333 linkcol=0f91ff track=2542329017 title="Risk of Rain 2 by Chris Christodoulou" >}}
-
-**Recommended by:** Bryson
 

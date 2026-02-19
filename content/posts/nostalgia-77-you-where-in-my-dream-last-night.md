@@ -4,7 +4,7 @@ date: 2026-01-28T11:33:22-07:00
 link: "https://nostalgia77.bandcamp.com/track/you-where-in-my-dream-last-night"
 position: 50
 draft: false
-tags: ["red"]
+tags: ["Recommended by: Me :)"]
 params:
   tier: "A"
   image-url: "https://f4.bcbits.com/img/a4063676284_16.jpg"

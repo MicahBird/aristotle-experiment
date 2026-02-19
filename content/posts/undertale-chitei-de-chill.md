@@ -4,7 +4,7 @@ date: 2026-02-09T20:03:14-07:00
 link: "https://www.youtube.com/playlist?list=OLAK5uy_mS-RgvGOGZWqwGTcW77xVoOFQxdSa_IyM"
 position: 9
 draft: false
-tags: ["red"]
+tags: ["Recommended by: Me :)"]
 params:
   tier: "B"
   image-url: "https://cdn11.bigcommerce.com/s-uak4l72xa0/images/stencil/1280x1280/products/3353/17138/SQEX-11212_UNDERTALE_CHITEIDECHILL_%25281%2529__26179.1763632375.jpg?c=1"
@@ -18,5 +18,5 @@ Then on the other hand you have masterpieces like *Another Medium (Remixed by gr
 
 **Memorable Track:** *Another Medium (Remixed by grooveman Spot)*
 
-**Recommended by:** Me :) (I searched [Fangamer](https://www.fangamer.com/collections/music) and was shocked to see that this album even existed!)
+(I came across this album while searching [Fangamer](https://www.fangamer.com/collections/music) and was shocked to see that this album even existed!)
 

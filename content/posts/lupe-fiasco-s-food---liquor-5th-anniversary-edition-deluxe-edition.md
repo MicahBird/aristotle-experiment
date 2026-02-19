@@ -5,7 +5,7 @@ date: 2026-02-11T07:28:34-07:00
 link: "https://music.youtube.com/playlist?list=OLAK5uy_lwO2znRrrHrqBgbrluVlaujWscrLiPVRo"
 position: 5
 draft: false
-tags: ["red"]
+tags: ["Recommended by: ITXDemi"]
 params:
   tier: "C"
   image-url: "https://images.genius.com/c37c89f3d362992ede17a15d47015cbb.1000x1000x1.jpg"
@@ -17,5 +17,4 @@ Despite the comically over the top album cover, this wasn't a bad listen. This a
 
 (I like the sample used in this song.)
 
-**Recommended by:** [ITXDemi](https://itxdemi.bandcamp.com/)
-
+**Shout out to [ITXDemi](https://itxdemi.bandcamp.com/) for recommending this album!**

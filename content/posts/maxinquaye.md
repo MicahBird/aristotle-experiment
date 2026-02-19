@@ -4,7 +4,7 @@ date: 2026-01-31T07:51:32-07:00
 link: "https://www.youtube.com/playlist?list=PLNPGM2D7aODe0bgPxiI-gEDoIOdT4l6cp"
 position: 1
 draft: false
-tags: ["red"]
+tags: ["Recommended by: The Wonky Angle"]
 params:
   tier: "F"
   image-url: "https://i.discogs.com/vlKjq0ocinLaxKuTJIHLv8pkZxUNYX7_lIyLWuA99bo/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU1MTYx/LTE3MjgxMjczMDUt/NTYyNS5qcGVn.jpeg"
@@ -14,4 +14,4 @@ Listening to this album was an exercise in restraint. Every fiber of my being wa
 
 **Memorable Track:** Suffocated Love *(would be decent without any lyrics)*
 
-**Recommended by:** [The Wonky Angle](https://www.youtube.com/watch?v=8RE9y-_qTG4)
+Discovered by: [The Wonky Angle](https://www.youtube.com/watch?v=8RE9y-_qTG4)
