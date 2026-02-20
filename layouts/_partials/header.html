@@ -4,10 +4,8 @@
       <a href="{{ site.Home.RelPermalink }}" class="site-logo">
         <h1>{{ site.Params.header.title | default site.Title }}</h1>
       </a>
-      {{ if .IsHome }}
-        {{ with site.Params.header.subtitle }}
-          <p class="site-subtitle">{{ . }}</p>
-        {{ end }}
+      {{ with site.Params.header.subtitle }}
+        <p class="site-subtitle">{{ . }}</p>
       {{ end }}
     </div>
     <nav class="main-nav">
