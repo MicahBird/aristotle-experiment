@@ -7,7 +7,7 @@ draft: false
 tags: ["Recommended by: Dawson"]
 params:
   tier: "E"
-  image-url: "https://i.ebayimg.com/images/g/AHQAAOSw5VFWHz-l/s-l640.jpg"
+  image-url: "/covers/s-l640.jpg"
 ---
 
 I went into this album entirely blind, and although that made the experience all the more comedic, it got old fast. I would highly advise that you do the same, and so I shall refrain from spoiling the fun here. I think that this would be a lot more fitting soundtrack for the *Dune* movies. You would have to be built different to listen to this while working out.
