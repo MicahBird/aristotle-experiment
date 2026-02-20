@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://aristotle-experiment.micahbird.com/'
 languageCode = 'en-US'
 title = 'Aristotle Experiment'
 
@@ -6,7 +6,7 @@ title = 'Aristotle Experiment'
   [params.header]
     title = "Aristotle Experiment"
     subtitle = "Listening to an album a day, from 1/27 to 2/19."
-    custom_html = '<script defer src="/script.js" data-website-id="TODO" data-host-url="https://umami.micahbird.com" ></script>'
+    custom_html = '<script defer src="/script.js" data-website-id="ddf231e1-7b21-40c5-9af1-30f07e8bfb65" data-host-url="https://umami.micahbird.com"></script>'
 
   [params.footer]
     text = "Made with ❤️ [Hugo](https://gohugo.io/)"
