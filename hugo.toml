@@ -1,15 +1,15 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-US'
-title = 'My New Hugo Site'
+title = 'Aristotle Experiment'
 
 [params]
   [params.header]
-    title = "Hugo Tierlist"
-    subtitle = "My favorite albums categorized by tier."
-    custom_html = "<!-- Add your custom header HTML here -->"
+    title = "Aristotle Experiment"
+    subtitle = "Listening to an album a day, from 1/27 to 2/19."
+    custom_html = '<script defer src="/script.js" data-website-id="TODO" data-host-url="https://umami.micahbird.com" ></script>'
 
   [params.footer]
-    text = "&copy; 2026 Hugo Tierlist. All rights reserved."
+    text = "Made with ❤️ [Hugo](https://gohugo.io/)"
 
   [params.tier_colors]
     s = "#ff7f7f"

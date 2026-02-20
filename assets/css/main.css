@@ -249,8 +249,12 @@ dialog::backdrop {
   gap: 20px;
 }
 
-.footer-links a {
+.footer-content a {
   color: #eee;
+  text-decoration: underline;
+}
+
+.footer-links a {
   text-decoration: none;
   font-size: 0.9rem;
 }
